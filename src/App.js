@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import { Player } from "@remotion/player";
+import { SaveBigTemplate } from "./remotion/SaveBigTemplate";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Remotion Player</h1>
+      <Player style={{width: '600px'}}
+      component={SaveBigTemplate}
+      durationInFrames={300}
+      compositionWidth={1080}
+      compositionHeight={1920}
+      fps={30}
+      controls
+    />
     </div>
   );
 }
