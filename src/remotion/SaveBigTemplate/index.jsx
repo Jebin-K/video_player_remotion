@@ -35,7 +35,6 @@ const FinalScene = {
   start: productsScene.start + productsScene.duration,
   duration: 30,
 };
-
 export const SaveBigTemplate = () => {
   return (
     <div>
